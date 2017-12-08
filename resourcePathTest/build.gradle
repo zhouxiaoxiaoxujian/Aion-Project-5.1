@@ -1,0 +1,18 @@
+group 'aion-emu-5.1'
+version '0.0.1'
+
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+}
+
+mainClassName = "testpackage.Main"
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

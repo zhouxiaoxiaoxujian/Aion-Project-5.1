@@ -1,0 +1,7 @@
+apply plugin: 'application'
+
+mainClassName = "com.aionemu.loginserver.LoginServer"
+
+dependencies {
+    compile project(":AL-Commons")
+}

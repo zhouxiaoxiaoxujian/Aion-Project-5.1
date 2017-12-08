@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<entries>
+	<!-- This XML contains statistics about execution times. -->
+	<!-- Submitted results will help the developers to optimize the server. -->
+	<entry average="25,929,266,250" count=     "4" total="103,717,065,000" class="GameServer$1"                                          method="run()" min="18,806,860,000" max="34,969,669,000" />
+	<entry average="24,439,291,666" count=     "3" total= "73,317,875,000" class="utils.chathandlers.ChatProcessor$1"                    method="run()" min="24,097,395,000" max="24,982,265,000" />
+	<entry average= "3,161,970,000" count=     "1" total=  "3,161,970,000" class="services.HousingBidService"                            method="run()" min= "3,161,970,000" max= "3,161,970,000" />
+	<entry average=    "30,315,973" count=   "152" total=  "4,608,028,000" class="utils.gametime.GameTimeUpdater"                        method="run()" min=         "3,000" max= "4,390,141,000" />
+	<entry average=    "29,199,000" count=     "1" total=     "29,199,000" class="java.lang.Thread"                                      method="run()" min=    "29,199,000" max=    "29,199,000" />
+	<entry average=    "13,416,500" count=     "2" total=     "26,833,000" class="services.abyss.AbyssRankUpdateService$4"               method="run()" min=    "12,230,000" max=    "14,603,000" />
+	<entry average=    "12,420,333" count=     "3" total=     "37,261,000" class="services.EventService$1"                               method="run()" min=     "3,197,000" max=    "29,997,000" />
+	<entry average=     "3,324,250" count=     "4" total=     "13,297,000" class="services.GameTimeService$1"                            method="run()" min=     "3,173,000" max=     "3,496,000" />
+	<entry average=     "3,237,000" count=     "1" total=      "3,237,000" class="services.abyss.AbyssRankUpdateService$2"               method="run()" min=     "3,237,000" max=     "3,237,000" />
+	<entry average=     "2,021,300" count=    "90" total=    "181,917,000" class="services.base.Base$15"                                 method="run()" min=        "11,000" max=    "30,861,000" />
+	<entry average=     "1,287,500" count=     "2" total=      "2,575,000" class="ai.worlds.cygnea.GuardPostGeneratorAI2$1"              method="run()" min=     "1,274,000" max=     "1,301,000" />
+	<entry average=       "671,000" count=     "1" total=        "671,000" class="network.loginserver.clientpackets.CM_GS_AUTH_RESPONSE" method="run()" min=       "671,000" max=       "671,000" />
+	<entry average=       "205,096" count=   "218" total=     "44,711,000" class="network.loginserver.clientpackets.CM_LS_PING"          method="run()" min=        "55,000" max=     "3,769,000" />
+	<entry average=       "127,500" count=    "12" total=      "1,530,000" class="services.BrokerService$1"                              method="run()" min=        "18,000" max=     "1,186,000" />
+	<entry average=        "42,947" count=   "759" total=     "32,597,000" class="services.events.FFAService$1"                          method="run()" min=             "0" max=    "27,788,000" />
+	<entry average=        "38,000" count=     "1" total=         "38,000" class="services.player.PlayerEventService$2"                  method="run()" min=        "38,000" max=        "38,000" />
+	<entry average=        "35,916" count=    "12" total=        "431,000" class="services.ProtectorConquerorService$1"                  method="run()" min=         "9,000" max=       "152,000" />
+	<entry average=         "8,770" count="21,598" total=    "189,427,000" class="services.NpcShoutsService$1"                           method="run()" min=             "0" max=       "446,000" />
+	<entry average=         "1,000" count=     "1" total=          "1,000" class="network.loginserver.clientpackets.CM_MACBAN_LIST"      method="run()" min=         "1,000" max=         "1,000" />
+</entries>

@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+mainClassName = "com.aionemu.chatserver.ChatServer"
+
+dependencies {
+    compile 'org.jboss.netty:netty:3.2.7.Final'
+    compile group: 'com.google.inject', name: 'guice', version: '2.0'
+    compile project(":AL-Commons")
+}

@@ -1,0 +1,27 @@
+apply plugin: 'java-library'
+
+version = "1.0.0"
+
+repositories {
+
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.19'
+    compile 'org.javassist:javassist:3.20.0-GA'
+    compile 'javolution:javolution:5.5.1'
+    compile 'com.google.guava:guava:15.0'
+    compile 'com.jolbox:bonecp:0.8.0.RELEASE'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.quartz-scheduler:quartz:2.2.2'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
+//    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'org.testng:testng:6.9.10'
+    runtime group:'mysql', name:'mysql-connector-java', version:'5.1.45'
+    compile files("${System.properties['java.home']}/../lib/tools.jar")
+}
