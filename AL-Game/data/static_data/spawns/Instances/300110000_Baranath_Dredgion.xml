@@ -257,11 +257,11 @@
 	    <spawn npc_id="700489">
 			<spot x="625.6797" y="412.0587" z="410.52228" entity_id="28"/>
 	    </spawn>
-		<!-- Main Cannon Control Surkana (Object Normal lvl:3) -->
+		<!-- testpackage.Main Cannon Control Surkana (Object Normal lvl:3) -->
 	    <spawn npc_id="700490">
 			<spot x="393.52335" y="567.063" z="408.91293" entity_id="25"/>
 	    </spawn>
-		<!-- Main Cannon Control Surkana (Object Normal lvl:3) -->
+		<!-- testpackage.Main Cannon Control Surkana (Object Normal lvl:3) -->
 	    <spawn npc_id="700491">
 			<spot x="579.9327" y="566.6443" z="408.83307" entity_id="31"/>
 	    </spawn>

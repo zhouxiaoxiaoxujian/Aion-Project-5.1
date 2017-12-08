@@ -35,7 +35,7 @@
 		<jar destfile="${build}/AL-Chat.jar">
             <fileset dir="${build.classes}"/>
             <manifest>
-                <attribute name="Main-Class" value="chatserver.ChatServer"/>
+                <attribute name="testpackage.Main-Class" value="chatserver.ChatServer"/>
             	<attribute name="Revision" value="${revision}"/>
             	<attribute name="Date" value="${date}"/>
             </manifest>

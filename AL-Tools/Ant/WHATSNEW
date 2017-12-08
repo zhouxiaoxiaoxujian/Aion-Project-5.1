@@ -73,7 +73,7 @@ Fixed bugs:
    Bugzilla Report 55949
 
  * <jar filesetmanifest="mergewithoutmain"> would still include the
-   Main section of the fileset manifests if there was no nested
+   testpackage.Main section of the fileset manifests if there was no nested
    manifest or manifest attribute.
    Bugzilla Report 54171
 
@@ -3159,7 +3159,7 @@ Other changes:
   immediate diagnostics
 
 * Ant launcher now supports a -main attribute so that you can specify
-  an extension class to the built in org.apache.tools.ant.Main
+  an extension class to the built in org.apache.tools.ant.testpackage.Main
   class. This class must implement the interface AntMain
 
 Changes from Ant 1.6.4 to Ant 1.6.5

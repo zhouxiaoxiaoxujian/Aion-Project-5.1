@@ -50,7 +50,7 @@
 		<jar destfile="${build}/AL-Game.jar">
             <fileset dir="${build.classes}"/>
             <manifest>
-                <attribute name="Main-Class" value="com.aionemu.gameserver.GameServer" />
+                <attribute name="testpackage.Main-Class" value="com.aionemu.gameserver.GameServer" />
             	<attribute name="Revision" value="${revision}"/>
             	<attribute name="Date" value="${date}"/>
             </manifest>

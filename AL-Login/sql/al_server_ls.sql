@@ -128,7 +128,7 @@ DROP TABLE IF EXISTS `banned_mac`;
 CREATE TABLE `banned_mac` (
   `uniId` int(10) NOT NULL AUTO_INCREMENT,
   `address` varchar(20) NOT NULL,
-  `time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `details` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`uniId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -1992,43 +1992,43 @@ INSERT INTO `cms_webshop` VALUES ('6', '167000752', '70', 'Manastone: Attack +5 
 INSERT INTO `cms_webshop` VALUES ('7', '167000717', '70', 'Manastone: Attack +5 / Magical Accuracy +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
 INSERT INTO `cms_webshop` VALUES ('8', '167000753', '70', 'Manastone: Attack +5 / MP +52', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
 INSERT INTO `cms_webshop` VALUES ('9', '167000756', '70', 'Manastone: Attack +5 / Parry +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('10', '167000716', '70', 'Manastone: Attack +5 / Resist Magic +8', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('11', '167000720', '70', 'Manastone: Crit Strike +19 / Attack +2', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('12', '167000722', '70', 'Manastone: Crit Strike +19 / Evasion +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('13', '167000718', '70', 'Manastone: Crit Strike +19 / HP +50', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('14', '167000726', '70', 'Manastone: Crit Strike +19 / Magical Accuracy +8', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('15', '167000719', '70', 'Manastone: Crit Strike +19 / MP +52', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('16', '167000723', '70', 'Manastone: Crit Strike +19 / Parry +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('17', '167000725', '70', 'Manastone: Crit Strike +19 / Resist Magic +8', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('18', '167000729', '70', 'Manastone: Magic Boost +27 / Accuracy +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('19', '167000732', '70', 'Manastone: Magic Boost +27 / Block +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('20', '167000733', '70', 'Manastone: Magic Boost +27 / Crit Strike +9', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('21', '167010206', '70', 'Manastone: Magic Boost +27 / Crit Strike +9', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('22', '167000730', '70', 'Manastone: Magic Boost +27 / Evasion +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('23', '167000727', '70', 'Manastone: Magic Boost +27 / HP +50', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('24', '167000735', '70', 'Manastone: Magic Boost +27 / Magical Accuracy +8', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('25', '167000728', '70', 'Manastone: Magic Boost +27 / MP +52', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('26', '167000734', '70', 'Manastone: Magic Boost +27 / Resist Magic +8', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('27', '167000739', '70', 'Manastone: Magical Accuracy +16 / Accuracy +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('28', '167010217', '70', 'Manastone: Magical Accuracy +16 / Attack +3', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('29', '167000742', '70', 'Manastone: Magical Accuracy +16 / Block +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('30', '167000743', '70', 'Manastone: Magical Accuracy +16 / Crit Strike +9', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('31', '167000740', '70', 'Manastone: Magical Accuracy +16 / Evasion +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('32', '167000738', '70', 'Manastone: Magical Accuracy +16 / Magic Boost +14', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('33', '167000744', '70', 'Manastone: Magical Accuracy +16 / Resist Magic +8', '1', '5', '200', '0', '0', '0000-00-00', '0000-00-00', 'icon_item_magicstone_03', 'Manastone');
-INSERT INTO `cms_webshop` VALUES ('35', '166030005', '70', 'Tempering Solution', '2', '1', '400', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_2stenchant_water_m01', 'enchant');
-INSERT INTO `cms_webshop` VALUES ('39', '164002111', '1', 'Greater Running Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_scroll_speed_run_01', 'ransum');
-INSERT INTO `cms_webshop` VALUES ('41', '164002112', '1', 'Greater Courage Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_scroll_speed_atk_01', 'ransum');
-INSERT INTO `cms_webshop` VALUES ('43', '164002113', '1', 'Greater Awakening Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_scroll_speed_casting_01', 'ransum');
-INSERT INTO `cms_webshop` VALUES ('45', '164002115', '1', 'Major Crit Spell Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_scroll_critical_mag_01', 'ransum');
-INSERT INTO `cms_webshop` VALUES ('47', '164002114', '1', 'Major Crit Strike Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_scroll_critical_phy_01', 'ransum');
-INSERT INTO `cms_webshop` VALUES ('51', '162000107', '1', 'Saam King\'s Herbs', '19', '100', '50', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_herb02', 'ransum');
-INSERT INTO `cms_webshop` VALUES ('52', '168000070', '1', 'Godstone: Aegir\'s Eye Beam 5%', '4', '1', '100', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_holystone_legend_blind', 'godstone');
-INSERT INTO `cms_webshop` VALUES ('53', '168000038', '1', 'Godstone: Bollvig\'s Love 10%', '4', '1', '1500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_holystone_legend_blind', 'godstone');
-INSERT INTO `cms_webshop` VALUES ('54', '168000035', '1', 'Godstone: Vidar\'s Dignity 2% (OutOfStock)', '4', '1', '300', '0', '0', '2016-10-15', '0000-00-00', 'icon_item_holystone_legend_paralyze', 'godstone');
-INSERT INTO `cms_webshop` VALUES ('55', '168000037', '1', 'Godstone: Khrudgelmir\'s Silence 10%', '4', '1', '1500', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_holystone_legend_slience', 'godstone');
-INSERT INTO `cms_webshop` VALUES ('56', '168000073', '1', 'Godstone: Khrudgelmir\'s Tacitness 5%', '4', '1', '100', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_holystone_legend_slience', 'godstone');
-INSERT INTO `cms_webshop` VALUES ('57', '167000455', '1', 'Manastone: Magic Boost +21', '1', '100', '0', '0', '0', '2016-10-09', '0000-00-00', 'icon_item_magicstone_04', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('10', '167000716', '70', 'Manastone: Attack +5 / Resist Magic +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('11', '167000720', '70', 'Manastone: Crit Strike +19 / Attack +2', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('12', '167000722', '70', 'Manastone: Crit Strike +19 / Evasion +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('13', '167000718', '70', 'Manastone: Crit Strike +19 / HP +50', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('14', '167000726', '70', 'Manastone: Crit Strike +19 / Magical Accuracy +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('15', '167000719', '70', 'Manastone: Crit Strike +19 / MP +52', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('16', '167000723', '70', 'Manastone: Crit Strike +19 / Parry +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('17', '167000725', '70', 'Manastone: Crit Strike +19 / Resist Magic +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('18', '167000729', '70', 'Manastone: Magic Boost +27 / Accuracy +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('19', '167000732', '70', 'Manastone: Magic Boost +27 / Block +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('20', '167000733', '70', 'Manastone: Magic Boost +27 / Crit Strike +9', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('21', '167010206', '70', 'Manastone: Magic Boost +27 / Crit Strike +9', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('22', '167000730', '70', 'Manastone: Magic Boost +27 / Evasion +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('23', '167000727', '70', 'Manastone: Magic Boost +27 / HP +50', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('24', '167000735', '70', 'Manastone: Magic Boost +27 / Magical Accuracy +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('25', '167000728', '70', 'Manastone: Magic Boost +27 / MP +52', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('26', '167000734', '70', 'Manastone: Magic Boost +27 / Resist Magic +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('27', '167000739', '70', 'Manastone: Magical Accuracy +16 / Accuracy +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('28', '167010217', '70', 'Manastone: Magical Accuracy +16 / Attack +3', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('29', '167000742', '70', 'Manastone: Magical Accuracy +16 / Block +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('30', '167000743', '70', 'Manastone: Magical Accuracy +16 / Crit Strike +9', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('31', '167000740', '70', 'Manastone: Magical Accuracy +16 / Evasion +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('32', '167000738', '70', 'Manastone: Magical Accuracy +16 / Magic Boost +14', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('33', '167000744', '70', 'Manastone: Magical Accuracy +16 / Resist Magic +8', '1', '5', '200', '0', '0', '2016-07-20', '2016-07-20', 'icon_item_magicstone_03', 'Manastone');
+INSERT INTO `cms_webshop` VALUES ('35', '166030005', '70', 'Tempering Solution', '2', '1', '400', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_2stenchant_water_m01', 'enchant');
+INSERT INTO `cms_webshop` VALUES ('39', '164002111', '1', 'Greater Running Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_scroll_speed_run_01', 'ransum');
+INSERT INTO `cms_webshop` VALUES ('41', '164002112', '1', 'Greater Courage Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_scroll_speed_atk_01', 'ransum');
+INSERT INTO `cms_webshop` VALUES ('43', '164002113', '1', 'Greater Awakening Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_scroll_speed_casting_01', 'ransum');
+INSERT INTO `cms_webshop` VALUES ('45', '164002115', '1', 'Major Crit Spell Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_scroll_critical_mag_01', 'ransum');
+INSERT INTO `cms_webshop` VALUES ('47', '164002114', '1', 'Major Crit Strike Scroll (1 hour)', '18', '50', '500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_scroll_critical_phy_01', 'ransum');
+INSERT INTO `cms_webshop` VALUES ('51', '162000107', '1', 'Saam King\'s Herbs', '19', '100', '50', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_herb02', 'ransum');
+INSERT INTO `cms_webshop` VALUES ('52', '168000070', '1', 'Godstone: Aegir\'s Eye Beam 5%', '4', '1', '100', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_holystone_legend_blind', 'godstone');
+INSERT INTO `cms_webshop` VALUES ('53', '168000038', '1', 'Godstone: Bollvig\'s Love 10%', '4', '1', '1500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_holystone_legend_blind', 'godstone');
+INSERT INTO `cms_webshop` VALUES ('54', '168000035', '1', 'Godstone: Vidar\'s Dignity 2% (OutOfStock)', '4', '1', '300', '0', '0', '2016-10-15', '2016-07-20', 'icon_item_holystone_legend_paralyze', 'godstone');
+INSERT INTO `cms_webshop` VALUES ('55', '168000037', '1', 'Godstone: Khrudgelmir\'s Silence 10%', '4', '1', '1500', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_holystone_legend_slience', 'godstone');
+INSERT INTO `cms_webshop` VALUES ('56', '168000073', '1', 'Godstone: Khrudgelmir\'s Tacitness 5%', '4', '1', '100', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_holystone_legend_slience', 'godstone');
+INSERT INTO `cms_webshop` VALUES ('57', '167000455', '1', 'Manastone: Magic Boost +21', '1', '100', '0', '0', '0', '2016-10-09', '2016-07-20', 'icon_item_magicstone_04', 'Manastone');
 INSERT INTO `cms_webshop` VALUES ('136', '110900136', '1', 'Foxtail Hot Pants Outfit', '14', '1', '0', '0', '0', '2016-10-09', '2016-10-06', 'icon_cash_item_missa_body_01', 'baju');
 INSERT INTO `cms_webshop` VALUES ('137', '110900191', '1', '[Event] Hot Beachwear', '14', '1', '0', '0', '0', '2016-10-09', '2016-10-06', 'icon_cash_item_swimsuit_02', 'baju');
 INSERT INTO `cms_webshop` VALUES ('138', '110900217', '1', '\'I-Can-Hear-Only-You\' Matching T-Shirt', '14', '1', '0', '0', '0', '2016-10-09', '2016-10-06', 'icon_cash_item_shirt_body_01', 'baju');
@@ -2115,7 +2115,7 @@ INSERT INTO `cms_webshop_category` VALUES ('7', 'Weapon Extends', 'weapon extend
 INSERT INTO `cms_webshop_category` VALUES ('10', 'General', 'general', '1', '2016-10-10', '2016-07-20');
 INSERT INTO `cms_webshop_category` VALUES ('11', 'Set Remodel', 'set remodel', '0', '2016-10-08', '2016-07-30');
 INSERT INTO `cms_webshop_category` VALUES ('12', 'Head Remodel', 'head remodel', '0', '2016-10-08', '2016-07-30');
-INSERT INTO `cms_webshop_category` VALUES ('13', 'Weapon Remodel', 'weapon remodel', '0', '2016-10-08', '0000-00-00');
+INSERT INTO `cms_webshop_category` VALUES ('13', 'Weapon Remodel', 'weapon remodel', '0', '2016-10-08', '2016-07-20');
 INSERT INTO `cms_webshop_category` VALUES ('14', 'Costume', 'costume', '1', '2016-07-30', '2016-07-30');
 INSERT INTO `cms_webshop_category` VALUES ('17', 'Wings', 'wings', '1', '2016-10-07', '2016-10-07');
 INSERT INTO `cms_webshop_category` VALUES ('18', 'Scroll', 'scroll', '0', '2016-10-10', '2016-10-08');

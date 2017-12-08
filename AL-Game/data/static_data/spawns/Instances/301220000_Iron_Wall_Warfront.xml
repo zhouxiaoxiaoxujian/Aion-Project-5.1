@@ -312,7 +312,7 @@
 		<spawn npc_id="233566">
 			<spot x="662.54413" y="221.62517" z="225.74001" entity_id="95"/>
 		</spawn>
-		<!-- Main Portcullis (Object Normal lvl:3) -->
+		<!-- testpackage.Main Portcullis (Object Normal lvl:3) -->
 		<spawn npc_id="233567">
 			<spot x="569.57892" y="163.50827" z="220.0367" entity_id="169"/>
 		</spawn>

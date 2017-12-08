@@ -383,7 +383,7 @@
 			<spot x="512.29" y="1048.33" z="123.29624" h="41" walker_id="5AE095564D5D9208B93C0D33CB122904A547AEA6"/>
 			<spot x="497.64" y="1144.0" z="134.77249" h="68" walker_id="E33862F26B9C2C89CB304C4DDA8020C41ECF77D5"/>
 		</spawn>
-		<!-- Main Power Generator -->
+		<!-- testpackage.Main Power Generator -->
 		<spawn npc_id="214895">
 			<spot x="231.455" y="308.222" z="120.634" h="62"/>
 		</spawn>
